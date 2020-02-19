@@ -37,5 +37,16 @@ class Vetor():
         self.__elementos[self.__posicao] = elemento
         self.__posicao += 1
 
+    def remover_elemento_indice(self, posicao):
+        vetor_inicio = self.__elementos[:posicao] # Pegando valores antes da posição
+        vetor_final = self.__elementos[posicao + 1:]  # Pegando os valores depois da posição e +1 (removendo o da posição)
+        self.__elementos = vetor_inicio + vetor_final
+        self.__posicao -= 1
+
+    def remover_elemento(self, elemento):
+        posicao = self.indice(elemento)
+        self.remover_elemento_indice(posicao)
+
+
     def listar_elemento(self, posicao):
         return self.__elementos[posicao]

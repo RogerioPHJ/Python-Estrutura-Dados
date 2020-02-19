@@ -28,8 +28,11 @@ if menu == 1:
     print(60 * "-")
     print(vetor_teste.tamanho_vetor()) # Verificando quantos elementos tem no vetor, pois o tamanho está dinamico
     print(vetor_teste)
-    print(vetor_teste.contem(8)) #Testando se Contem o valor 8 no Vetor_teste
-    print(vetor_teste.indice(3)) #Buscando em qual indice está o 3
+    #print(vetor_teste.contem(8))
+    print(vetor_teste.indice(4)) #Buscando em qual indice está o 3
+    vetor_teste.remover_elemento_indice(3) #Removeu pelo indice
+    print(vetor_teste)
+    vetor_teste.remover_elemento(5) #Removeu pelo elemento (que por debaixo dos panos usa o indice)
     print(vetor_teste)
 
 
