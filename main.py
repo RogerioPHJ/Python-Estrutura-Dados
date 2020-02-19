@@ -28,6 +28,6 @@ if menu == 1:
     print(vetor_teste.listar_elemento(0))
     print(vetor_teste.listar_elemento(1))
     print(vetor_teste.listar_elemento(2))
-    print(vetor_teste.listar_elemento(3)) #Impressão do teste
-    print(vetor_teste.listar_elemento(4)) #impressão do teste
+    print(vetor_teste.listar_elemento(3)) 
+    print(vetor_teste.listar_elemento(4))
 
