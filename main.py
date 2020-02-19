@@ -25,9 +25,12 @@ if menu == 1:
     vetor_teste.inserir_elemento_posicao(5, 2) # Essa chamada empurra o 4 e o 3
     vetor_teste.inserir_elemento_final(1)
     #vetor_teste.inserir_elemento_final(2)
-    print(vetor_teste)
     print(60 * "-")
     print(vetor_teste.tamanho_vetor()) # Verificando quantos elementos tem no vetor, pois o tamanho está dinamico
+    print(vetor_teste)
+    print(vetor_teste.contem(8)) #Testando se Contem o valor 8 no Vetor_teste
+    print(vetor_teste.indice(3)) #Buscando em qual indice está o 3
+    print(vetor_teste)
 
 
 

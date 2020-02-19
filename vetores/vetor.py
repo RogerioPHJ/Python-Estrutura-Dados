@@ -10,6 +10,20 @@ class Vetor():
     def __str__(self):
         return ' ' .join([str (i) for i in self.__elementos]) #Retorna uma string que percorre o vetor
 
+    def contem(self, elemento):
+        for i in range(self.tamanho_vetor()):
+            elem = self.listar_elemento(i)
+            if elem == elemento:
+                return True
+        return False
+
+    def indice(self, elemento):
+        for i in range(self.tamanho_vetor()):
+            elem = self.listar_elemento(i)
+            if elem == elemento:
+                return i
+        return -1
+
     def inserir_elemento_posicao(self, elemento, posicao):
         vetor_inicio = self.__elementos[:posicao] + [None] #Pegando valores antes da posição e criando mais uma posição
         vetor_final = self.__elementos[posicao:] #Pegando os valores depois da posição
