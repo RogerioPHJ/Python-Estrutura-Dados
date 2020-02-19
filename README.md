@@ -16,8 +16,7 @@
 | f4a07f1e20cbe8f90c14c7a7752536798d53d4cf | Aula 1.2.5: Remover Elementos do Vetor |
 |  | Aula 1.3.1: Criando Nós |
 |  | Aula 1.3.2: Criando as Listas |
-|  | Aula 1.3.3: Inserindo elementos, retorno do tamanho e verificação de existência na lista
- |
+|  | Aula 1.3.3: Inserindo elementos, retorno do tamanho e verificação de existência na lista | 
 |  | Aula 1.3.4: Impressão das Listas |
 |  | Aula 1.3.5: Recuperação dos Nós |
 |  | Aula 1.3.5: Inserção no meio da Lista |
