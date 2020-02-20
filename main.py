@@ -2,10 +2,11 @@ from array import array
 
 from conjuntos import conjunto
 from filas import fila
-from pilhas import  pilha
+from pilhas import pilha
 from listas import lista_ligada, lista_duplamente_ligada
 from vetores import vetor
 from mapas import mapa
+from arvores import arvore, no_arvore_inteiro
 
 #vetor_inteiros = array('b', [1,2,3])
 #print(vetor_inteiros)
@@ -21,6 +22,8 @@ print("4. Pilhas")
 print("5. Filas")
 print("6. Conjuntos")
 print("7. Mapas")
+print("8. Árvores")
+
 
 menu = int(input("Digite a opção desejada: "))
 
@@ -117,6 +120,16 @@ elif menu == 7:
     print(mapa_teste)
     print(mapa_teste.contem_chave("par"))
     print(mapa_teste.recuperar("par"))
+
+elif menu == 8:
+    arvore_teste = arvore.Arvore()
+    print(arvore_teste)
+    arvore_teste.inserir_elemento(no_arvore_inteiro.NoArvoreInteiro(5))
+    print(arvore_teste)
+    arvore_teste.inserir_elemento(no_arvore_inteiro.NoArvoreInteiro(4))
+    arvore_teste.inserir_elemento(no_arvore_inteiro.NoArvoreInteiro(6))
+    print(arvore_teste)
+
 
 else:
     print("Opção inválida")

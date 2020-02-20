@@ -28,3 +28,6 @@ class Arvore():
                 referencia.no_esquerdo = novo_no
             else:
                 self.__inserir(referencia.no_esquerdo, novo_no)
+
+    def __str__(self):
+        return "[(X)]" if self.__raiz == None else self.__raiz.__str__()
