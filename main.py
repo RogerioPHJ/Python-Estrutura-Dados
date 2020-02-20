@@ -43,4 +43,5 @@ elif menu == 2:
     lista_teste.inserir(2)
     lista_teste.inserir(3)
     print(lista_teste)
-
+    print(60 * "-")
+    print(lista_teste.recuperar_elemento_no(2))
