@@ -1,4 +1,6 @@
 from array import array
+
+from listas import lista_ligada
 from vetores import vetor
 
 #vetor_inteiros = array('b', [1,2,3])
@@ -35,6 +37,8 @@ if menu == 1:
     vetor_teste.remover_elemento(5) #Removeu pelo elemento (que por debaixo dos panos usa o indice)
     print(vetor_teste)
 
-
-
+elif menu == 2:
+    lista_teste = lista_ligada.ListaLigada()
+    lista_teste.inserir(1)
+    lista_teste.inserir(2)
 
