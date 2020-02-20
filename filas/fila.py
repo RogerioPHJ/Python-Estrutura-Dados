@@ -19,4 +19,4 @@ class Fila():
 
     def __str__(self):
         temp = self.__elementos.__str__()
-        return temp 
+        return temp
