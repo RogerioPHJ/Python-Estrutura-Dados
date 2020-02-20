@@ -48,6 +48,16 @@ class Arvore():
             else:
                 print(referencia.valor.__str__())
 
+    def altura(self):
+        return self.__altura(self.__raiz)
+
+    def __altura(self, referencia):
+        if referencia == None:
+            return -1
+        altura_esquerda = self.__altura(referencia.no_esquerdo)
+        altura_direita = self.__altura(referencia.no_direito)
+        return (altura_esquerda + 1) if altura_esquerda > altura_direita else (altura_direita + 1)
+
     @property
     def raiz(self):
         return self.__raiz
