@@ -47,4 +47,7 @@ elif menu == 2:
     print(60 * "-")
     print(lista_teste.contem(5))
     print(lista_teste.indice(55))
+    print(60 * "-")
+    lista_teste.remover_elemento(4)
+    print(lista_teste)
     #print(lista_teste.recuperar_elemento_no(2))
