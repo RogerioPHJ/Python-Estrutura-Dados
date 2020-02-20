@@ -14,14 +14,14 @@
 | 59b33fb03085a6ed566354331c7ba607676043fb | Aula 1.2.4: Retornando valores do vetor |
 | bf99fd34bd30b6662c0da0059f558d659c3e4a54 | Aula 1.2.5: Criação do Contem() e Indice() pro Vetor |
 | f4a07f1e20cbe8f90c14c7a7752536798d53d4cf | Aula 1.2.5: Remover Elementos do Vetor |
-|  | Aula 1.3.1: Criando Nós |
-|  | Aula 1.3.2: Criando as Listas |
-|  | Aula 1.3.3: Inserindo elementos, retorno do tamanho e verificação de existência na lista | 
-|  | Aula 1.3.4: Impressão das Listas |
-|  | Aula 1.3.5: Recuperação dos Nós |
-|  | Aula 1.3.5: Inserção no meio da Lista |
-|  | Aula 1.3.6: Criação do Contem() e Indice() pra Lista |
-|  | Aula 1.3.7: Remover Elementos da Lista |
+| 8437a3de07e045ef448db6f0c5e76e0aae4c6ac1 | Aula 1.3.1: Criando Nós |
+| 2f5f3ed200217009365df4d02d9aef824ef23e79 | Aula 1.3.2: Criando as Listas |
+| d9154b613704ea2a79ea1b0309cc4e515a89fba1 | Aula 1.3.3: Inserindo elementos, retorno do tamanho e verificação de existência na lista | 
+| e2fac886279a89363ff4fb447517f25462019d6b | Aula 1.3.4: Impressão das Listas |
+| f130c852b17b2cdd1df36d1875eedc1f75c7e2cd | Aula 1.3.5: Recuperação dos Nós |
+| 2efa398365c45aab0271856ce16697e96ac7090f | Aula 1.3.6: Inserção no meio da Lista |
+| ce64ce755b7a683efa9a6d2823c1164b4fe9926e | Aula 1.3.7: Criação do Contem() e Indice() pra Lista |
+| 0e41087dec3bc087d0de7fb29bd5ceea35ab3113 | Aula 1.3.8: Remover Elementos da Lista |
 |  | Aula 1.4.1: Criando a Estrutura da Lista Duplamente Ligada |
 |  | Aula 1.4.2: Inserção na Lista Duplamente Ligada|
 |  | Aula 1.4.3: Remover Elementos da Lista Duplamente Ligada |
