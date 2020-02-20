@@ -1,5 +1,6 @@
 from array import array
 
+from pilhas import  pilha
 from listas import lista_ligada, lista_duplamente_ligada
 from vetores import vetor
 
@@ -65,3 +66,7 @@ elif menu == 3:
     print(60 * "-")
     lista_teste.remover_posicao(1)
     print(lista_teste)
+
+elif menu == 4:
+    pilha_teste = pilha.Pilha()
+    pilha_teste.empilhar(5)
