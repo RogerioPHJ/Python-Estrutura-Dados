@@ -1,4 +1,5 @@
 from listas import lista_ligada
+from mapas import associacao
 
 class Mapa():
     def __init__(self):
@@ -10,3 +11,22 @@ class Mapa():
 
     def gerar_numero_espalhamento(self, chave):
         return hash(chave) % self.__numero_categorias
+
+    def contem_chave(self, chave):
+        numero_espalhamento = self.gerar_numero_espalhamento(chave)
+        categoria = self.__elementos.recuperar_elemento_no(numero_espalhamento)
+        for i in range(categoria.tamanho):
+            associacao = categoria.recuperar_elemento_no(i)
+            if associacao.chave == chave:
+                return True
+        return False
+
+    def remover(self, chave):
+        numero_espalhamento = self.gerar_numero_espalhamento(chave)
+        categoria = self.__elementos.recuperar_elemento_no(numero_espalhamento)
+        for i in range(categoria.tamanho):
+            associacao = categoria.recuperar_elemento_no(i)
+            if associacao.chave == chave:
+                categoria.remover_elemento(associacao)
+                return True
+        return False
