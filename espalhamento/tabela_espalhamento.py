@@ -10,3 +10,22 @@ class TabelaEspalhamento():
             self.__elementos.inserir(lista_ligada.ListaLigada())
 
 
+    def __gerar_numero_espalhamento(self, elemento):
+        return hash(elemento) % self.__numero_categorias
+
+
+    def inserir(self, elemento):
+        if self.contem(elemento):
+            return False
+        numero_espalhamento = self.__gerar_numero_espalhamento(elemento)
+        categoria = self.__elementos.recuperar_elemento_no(numero_espalhamento)
+        categoria.inserir(elemento)
+        self.__tamanho += 1
+        return True
+
+
+
+    def contem(self, elemento):
+        numero_espalhamento = self.__gerar_numero_espalhamento(elemento)
+        categoria = self.__elementos.recuperar_elemento_no(numero_espalhamento)
+        return categoria.contem(elemento)
