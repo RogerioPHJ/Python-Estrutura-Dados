@@ -1,6 +1,7 @@
 from array import array
 
 from listas import lista_ligada
+from listas import lista_duplamente_ligada
 from vetores import vetor
 
 #vetor_inteiros = array('b', [1,2,3])
@@ -50,4 +51,19 @@ elif menu == 2:
     print(60 * "-")
     lista_teste.remover_elemento(4)
     print(lista_teste)
+    #print(lista_teste.recuperar_elemento_no(2))
+
+elif menu == 3:
+    lista_teste = lista_duplamente_ligada.ListaDuplamenteLigada()
+    lista_teste.inserir(1)
+    lista_teste.inserir(4)
+    lista_teste.inserir(5)
+    lista_teste.inserir_posicao(1, 10)
+    print(lista_teste)
+    print(60 * "-")
+    #print(lista_teste.contem(5))
+    #print(lista_teste.indice(55))
+    #print(60 * "-")
+    #lista_teste.remover_elemento(4)
+    #print(lista_teste)
     #print(lista_teste.recuperar_elemento_no(2))
