@@ -1,5 +1,8 @@
 from .no import No
-class ListaLigada():
+
+
+class ListaLigada:
+
     def __init__(self):
         self.__primeiro_no = None
         self.__ultimo_no = None
@@ -7,7 +10,7 @@ class ListaLigada():
 
     def inserir(self, elemento):
         novo_no = No(elemento)
-        if self.esta_vazia() :
+        if self.esta_vazia():
             self.__primeiro_no = novo_no
             self.__ultimo_no = novo_no
         else:
@@ -16,4 +19,12 @@ class ListaLigada():
         self.__tamanho += 1
 
     def esta_vazia(self):
-        return self.__elemento == 0
+        return self.__tamanho == 0
+
+    def __str__(self):
+        temp = self.__primeiro_no
+        elementos = ''
+        while (temp):
+            elementos = f'{elementos} {temp.elemento}'
+            temp = temp.proximo
+        return elementos
