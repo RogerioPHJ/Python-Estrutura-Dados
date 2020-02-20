@@ -2,6 +2,21 @@ class Arvore():
     def __init__(self, raiz=None):
         self.__raiz = raiz
 
+    def em_ordem(self):
+        # ERD
+        self.__em_ordem(self.__raiz)
+
+    def __em_ordem(self, referencia):
+        if referencia.no_esquerdo != None:
+            self.__em_ordem(referencia.no_esquerdo)
+            print(referencia.valor.__str__())
+            if referencia.no_direito != None:
+                self.__em_ordem(referencia.no_direito)
+        else:
+            print(referencia.valor.__str__())
+            if referencia.no_direito != None:
+                self.__em_ordem(referencia.no_direito)
+
     @property
     def raiz(self):
         return self.__raiz
