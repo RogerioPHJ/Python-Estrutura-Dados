@@ -131,7 +131,10 @@ elif menu == 8:
     print(arvore_teste)
     arvore_teste.inserir_elemento(no_arvore_inteiro.NoArvoreInteiro(8))
     arvore_teste.inserir_elemento(no_arvore_inteiro.NoArvoreInteiro(7))
+    print("Em ordem")
     print(arvore_teste.em_ordem())
+    print("Pré-ordem")
+    print(arvore_teste.pre_ordem())
 
 
 else:
