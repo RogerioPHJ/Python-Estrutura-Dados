@@ -30,7 +30,7 @@ class Mapa():
                 categoria.remover_elemento(associacao)
                 return True
         return False
-    
+
     def adicionar(self, chave, valor):
         if self.contem_chave(chave):
             self.remover(chave)

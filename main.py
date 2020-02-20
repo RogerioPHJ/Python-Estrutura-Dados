@@ -5,6 +5,7 @@ from filas import fila
 from pilhas import  pilha
 from listas import lista_ligada, lista_duplamente_ligada
 from vetores import vetor
+from mapas import mapa
 
 #vetor_inteiros = array('b', [1,2,3])
 #print(vetor_inteiros)
@@ -19,6 +20,7 @@ print("3. Listas Duplamente Ligadas")
 print("4. Pilhas")
 print("5. Filas")
 print("6. Conjuntos")
+print("7. Mapas")
 
 menu = int(input("Digite a opção desejada: "))
 
@@ -106,7 +108,15 @@ elif menu == 6:
     print(conjunto_teste.inserir(4))
     print(conjunto_teste)
 
-
+elif menu == 7:
+    mapa_teste = mapa.Mapa()
+    print(mapa_teste)
+    mapa_teste.adicionar("par", 10)
+    mapa_teste.adicionar("impar", 5)
+    mapa_teste.adicionar("par", 2)
+    print(mapa_teste)
+    print(mapa_teste.contem_chave("par"))
+    print(mapa_teste.recuperar("par"))
 
 else:
     print("Opção inválida")
